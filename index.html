@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Learn Economics Easily</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Learn Economics Easily</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#topics">Topics</a>
+      <a href="#blog">Blog</a>
+      <a href="#quiz">Quiz</a>
+      <a href="#videos">Videos</a>
+      <a href="#contact">Contact</a>
+      <button onclick="toggleDarkMode()">Dark Mode</button>
+      <select onchange="changeLanguage(this.value)">
+        <option value="en">EN</option>
+        <option value="bn">BN</option>
+      </select>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2 data-en="Welcome to Economics Learning" data-bn="অর্থনীতি শেখায় স্বাগতম">Welcome to Economics Learning</h2>
+    <p data-en="Understand basic to advanced economic concepts easily."
+       data-bn="সহজে অর্থনীতির মৌলিক থেকে উন্নত ধারণা বুঝুন।">
+       Understand basic to advanced economic concepts easily.</p>
+    <input type="text" placeholder="Search topics..." onkeyup="searchTopics(this.value)">
+  </section>
+
+  <section id="topics">
+    <h2>Key Topics</h2>
+    <ul id="topicList">
+      <li>What is Economics?</li>
+      <li>Microeconomics vs Macroeconomics</li>
+      <li>Supply and Demand</li>
+      <li>Inflation and GDP</li>
+    </ul>
+  </section>
+
+  <section id="blog">
+    <h2>Latest Blog</h2>
+    <article>
+      <h3>Why Economics Matters?</h3>
+      <p>Economics helps us understand how the world works and how to make better decisions.</p>
+    </article>
+  </section>
+
+  <section id="quiz">
+    <h2>Quick Quiz</h2>
+    <p>What does GDP stand for?</p>
+    <button onclick="alert('Correct!')">Gross Domestic Product</button>
+    <button onclick="alert('Wrong!')">Great Dynamic Price</button>
+  </section>
+
+  <section id="videos">
+    <h2>Video Lessons</h2>
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/zO8ZbyEQmJg" allowfullscreen></iframe>
+  </section>
+
+  <section id="login">
+    <h2>Login</h2>
+    <form onsubmit="event.preventDefault(); alert('Logged In!');">
+      <input type="text" placeholder="Username" required />
+      <input type="password" placeholder="Password" required />
+      <button type="submit">Login</button>
+    </form>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: contact@economylearn.com</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Learn Economics Easily</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+  </html>
